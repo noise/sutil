@@ -1,0 +1,22 @@
+name: sutil
+version: '0.1'
+summary: Utilities for working with snaps and snap store APIs
+description: |
+  Some simple utils to make working with snaps and the snap store APIs
+  a bit more convenient.
+grade: stable
+confinement: strict
+
+parts:
+  sutil:
+    plugin: python
+    source: .
+    stage-packages:
+      - libsodium18
+      - libsodium-dev
+    requirements: requirements.txt
+
+apps:
+  sutil:
+    command: bin/sutil.py
+    plugs: [network-bind, network]
