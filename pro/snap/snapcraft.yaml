@@ -1,0 +1,20 @@
+name: sutil-pro
+version: '0.1'
+summary: Utilities for working with snaps and snap store APIs. (donation-ware version)
+description: |
+  Some simple utils to make working with snaps and the snap store APIs
+  a bit more convenient.
+  Just like sutil but all proceeds go to buy coffee for Snap Store developers!
+grade: stable
+confinement: strict
+
+parts:
+  sutil:
+    plugin: python
+    source: ../
+
+apps:
+  sutil:
+    command: bin/sutil.py
+    plugs: [network-bind, network]
+    aliases: [sutil]

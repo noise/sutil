@@ -1,0 +1,10 @@
+**/parts
+**/prime
+**/stage
+**/build
+**/dist
+**/*.pyc
+snap/.snapcraft/
+pro/snap/.snapcraft/
+**/*.snap
+**/*~
