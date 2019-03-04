@@ -1,5 +1,5 @@
 name: sutil
-version: '0.1'
+version: '0.2'
 summary: Utilities for working with snaps and snap store APIs
 description: |
   Some simple utils to make working with snaps and the snap store APIs
